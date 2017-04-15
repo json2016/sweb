@@ -1,0 +1,89 @@
+/* --------------------------------------
+
+Color Name: Green
+Color Code : #2ecc71
+
+----------------------------------------- */
+.color-background-second {
+  background-color: #2ecc71;
+}
+.line {
+  background: #2ecc71; 
+}
+
+.line-two {
+  background: #ffffff;
+}
+strong {
+    color: #2ecc71;
+}
+.colored-text {
+  color: #2ecc71 !important; }
+
+.color-background {
+  background: #1B1B1B;; }
+
+a {
+  color: #2ecc71; }
+
+.navbar-toggle {
+  border: none !important;
+  background-color: #2ecc71 !important; }
+
+.navbar-toggle:hover {
+  background-color: #2ecc71 !important; }
+
+.non-sticky .navbar-nav > li > a:hover {
+  color: #2ecc71; }
+
+.standard-button {
+  background:  #2ecc71;
+  border: 1px solid #fff !important;
+  border-radius: 1px !important;
+}
+
+.standard-button:hover {
+  opacity: 0.8; }
+
+.secondary-button:hover {
+  opacity: 0.8; }
+
+.sticky-navigation .main-navigation .current a {
+  color: #2ecc71 !important;
+  border-color: #2ecc71 !important; }
+
+.sticky-navigation .navbar-nav > li > a:hover {
+  color: #2ecc71; }
+
+.feature-list li .icon-custom {
+  background:  #2ecc71;
+  border: 1px solid  #fff; 
+}
+.feature {
+    
+}
+.feature .icon {
+  color: #2ecc71;
+  border: 2px solid #2ecc71; }
+.package {
+    border-top: 3px solid  #fff;
+}
+.package-center {
+    border-top: 3px solid #fff;
+}
+.input-box:active,
+.textarea-box:active,
+.input-box:focus,
+.textarea-box:focus {
+  border-left: 2px solid #2ecc71 !important; }
+
+.portfolio .owl-theme .owl-controls .owl-page span {
+  background: #fff; }
+.social-icons li a {
+    background-color: #2ecc71;
+    padding: 2px 5px;
+}
+.social-icons li a:hover {
+  color: #ffffff; }
+
+/*# sourceMappingURL=alizarin.css.map */

@@ -1,0 +1,89 @@
+/* --------------------------------------
+
+Color Name: Yellow
+Color Code : #f7ca18
+
+----------------------------------------- */
+.color-background-second {
+  background-color: #f7ca18;
+}
+.line {
+  background: #f7ca18; 
+}
+
+.line-two {
+  background: #ffffff;
+}
+strong {
+    color: #f7ca18;
+}
+.colored-text {
+  color: #f7ca18 !important; }
+
+.color-background {
+  background: #1B1B1B;; }
+
+a {
+  color: #f7ca18; }
+
+.navbar-toggle {
+  border: none !important;
+  background-color: #f7ca18 !important; }
+
+.navbar-toggle:hover {
+  background-color: #f7ca18 !important; }
+
+.non-sticky .navbar-nav > li > a:hover {
+  color: #f7ca18; }
+
+.standard-button {
+  background:  #f7ca18;
+  border: 1px solid #fff !important;
+  border-radius: 1px !important;
+}
+
+.standard-button:hover {
+  opacity: 0.8; }
+
+.secondary-button:hover {
+  opacity: 0.8; }
+
+.sticky-navigation .main-navigation .current a {
+  color: #f7ca18 !important;
+  border-color: #f7ca18 !important; }
+
+.sticky-navigation .navbar-nav > li > a:hover {
+  color: #f7ca18; }
+
+.feature-list li .icon-custom {
+  background:  #f7ca18;
+  border: 1px solid  #fff; 
+}
+.feature {
+    
+}
+.feature .icon {
+  color: #f7ca18;
+  border: 2px solid #f7ca18; }
+.package {
+    border-top: 3px solid  #fff;
+}
+.package-center {
+    border-top: 3px solid #fff;
+}
+.input-box:active,
+.textarea-box:active,
+.input-box:focus,
+.textarea-box:focus {
+  border-left: 2px solid #f7ca18 !important; }
+
+.portfolio .owl-theme .owl-controls .owl-page span {
+  background: #fff; }
+.social-icons li a {
+    background-color: #f7ca18;
+    padding: 2px 5px;
+}
+.social-icons li a:hover {
+  color: #ffffff; }
+
+/*# sourceMappingURL=alizarin.css.map */

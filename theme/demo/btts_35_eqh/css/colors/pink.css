@@ -1,0 +1,89 @@
+/* --------------------------------------
+
+Color Name: Pink
+Color Code : #db0a5b
+
+----------------------------------------- */
+.color-background-second {
+  background-color: #db0a5b;
+}
+.line {
+  background: #db0a5b; 
+}
+
+.line-two {
+  background: #ffffff;
+}
+strong {
+    color: #db0a5b;
+}
+.colored-text {
+  color: #db0a5b !important; }
+
+.color-background {
+  background: #1B1B1B;; }
+
+a {
+  color: #db0a5b; }
+
+.navbar-toggle {
+  border: none !important;
+  background-color: #db0a5b !important; }
+
+.navbar-toggle:hover {
+  background-color: #db0a5b !important; }
+
+.non-sticky .navbar-nav > li > a:hover {
+  color: #db0a5b; }
+
+.standard-button {
+  background:  #db0a5b;
+  border: 1px solid #fff !important;
+  border-radius: 1px !important;
+}
+
+.standard-button:hover {
+  opacity: 0.8; }
+
+.secondary-button:hover {
+  opacity: 0.8; }
+
+.sticky-navigation .main-navigation .current a {
+  color: #db0a5b !important;
+  border-color: #db0a5b !important; }
+
+.sticky-navigation .navbar-nav > li > a:hover {
+  color: #db0a5b; }
+
+.feature-list li .icon-custom {
+  background:  #db0a5b;
+  border: 1px solid  #fff; 
+}
+.feature {
+    
+}
+.feature .icon {
+  color: #db0a5b;
+  border: 2px solid #db0a5b; }
+.package {
+    border-top: 3px solid  #fff;
+}
+.package-center {
+    border-top: 3px solid #fff;
+}
+.input-box:active,
+.textarea-box:active,
+.input-box:focus,
+.textarea-box:focus {
+  border-left: 2px solid #db0a5b !important; }
+
+.portfolio .owl-theme .owl-controls .owl-page span {
+  background: #fff; }
+.social-icons li a {
+    background-color: #db0a5b;
+    padding: 2px 5px;
+}
+.social-icons li a:hover {
+  color: #ffffff; }
+
+/*# sourceMappingURL=alizarin.css.map */

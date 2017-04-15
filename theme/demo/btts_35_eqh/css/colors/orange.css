@@ -1,0 +1,89 @@
+/* --------------------------------------
+
+Color Name: Orange
+Color Code : #f89406
+
+----------------------------------------- */
+.color-background-second {
+  background-color: #f89406;
+}
+.line {
+  background: #f89406; 
+}
+
+.line-two {
+  background: #ffffff;
+}
+strong {
+    color: #f89406;
+}
+.colored-text {
+  color: #f89406 !important; }
+
+.color-background {
+  background: #1B1B1B;; }
+
+a {
+  color: #f89406; }
+
+.navbar-toggle {
+  border: none !important;
+  background-color: #f89406 !important; }
+
+.navbar-toggle:hover {
+  background-color: #f89406 !important; }
+
+.non-sticky .navbar-nav > li > a:hover {
+  color: #f89406; }
+
+.standard-button {
+  background:  #f89406;
+  border: 1px solid #fff !important;
+  border-radius: 1px !important;
+}
+
+.standard-button:hover {
+  opacity: 0.8; }
+
+.secondary-button:hover {
+  opacity: 0.8; }
+
+.sticky-navigation .main-navigation .current a {
+  color: #f89406 !important;
+  border-color: #f89406 !important; }
+
+.sticky-navigation .navbar-nav > li > a:hover {
+  color: #f89406; }
+
+.feature-list li .icon-custom {
+  background:  #f89406;
+  border: 1px solid  #fff; 
+}
+.feature {
+    
+}
+.feature .icon {
+  color: #f89406;
+  border: 2px solid #f89406; }
+.package {
+    border-top: 3px solid  #fff;
+}
+.package-center {
+    border-top: 3px solid #fff;
+}
+.input-box:active,
+.textarea-box:active,
+.input-box:focus,
+.textarea-box:focus {
+  border-left: 2px solid #f89406 !important; }
+
+.portfolio .owl-theme .owl-controls .owl-page span {
+  background: #fff; }
+.social-icons li a {
+    background-color: #f89406;
+    padding: 2px 5px;
+}
+.social-icons li a:hover {
+  color: #ffffff; }
+
+/*# sourceMappingURL=alizarin.css.map */

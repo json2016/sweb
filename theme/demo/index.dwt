@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="{$keywords}" />
+<meta name="description" content="{$description}" />
+<meta name="generator" content="Ridpackrat" />
+<title>{$page_title}</title>
+<!-- Favicon Icon -->
+<link rel="icon" href="images/images/favicon.ico">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="images/css/bootstrap.min.css">
+<!-- Font Icons -->
+<!--Fontawesome-->
+<link rel="stylesheet" href="images/assets/font-awesome/css/font-awesome.min.css">
+<!--[if lte IE 7]><script src="images/assets/elegant-icons/lte-ie7.js"></script><![endif]-->
+<!-- Corousel and Lightbox -->
+<link rel="stylesheet" href="images/css/owl.theme.css">
+<link rel="stylesheet" href="images/css/owl.carousel.css">
+<link rel="stylesheet" href="images/css/nivo-lightbox.css">
+<link rel="stylesheet" href="images/css/themes/default/default.css">
+<!-- Colors -->
+<!-- Default Color -->
+<link rel="stylesheet" href="images/css/colors/blue.css"> 
+<!-- Colors Options --> 
+<!--<link rel="stylesheet" href="images/css/colors/alizarin.css">-->
+<!--<link rel="stylesheet" href="images/css/colors/blue.css">-->
+<!--<link rel="stylesheet" href="images/css/colors/green.css">-->
+<!--<link rel="stylesheet" href="images/css/colors/orange.css">-->
+<!--<link rel="stylesheet" href="images/css/colors/pink.css">-->
+<!--<link rel="stylesheet" href="images/css/colors/purple.css">-->
+<!--<link rel="stylesheet" href="images/css/colors/yellow.css">-->
+<!-- Preloader -->
+<link rel="stylesheet" href="images/css/preloader.css">
+<!-- style.css -->
+<link rel="stylesheet" href="images/css/style.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="images/css/responsive.css">
+<!--[if lt IE 9]>
+	<script src="images/js/html5shiv.js"></script>
+	<script src="images/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="preloaders">
+  <div class="preloaders-gif">&nbsp;</div>
+</div>
+{include file="inc/header.tpl"}
+{include file="inc/section_about.tpl"}
+{include file="inc/products.tpl"}
+{include file="inc/follow_me.tpl"}
+{include file="inc/contact.tpl"}
+{include file="inc/footer.tpl"}
+</body>
+</html>
