@@ -46,10 +46,24 @@
   <div class="preloaders-gif">&nbsp;</div>
 </div>
 {include file="inc/header.tpl"}
-{include file="inc/section_about.tpl"}
-{include file="inc/products.tpl"}
-{include file="inc/follow_me.tpl"}
-{include file="inc/contact.tpl"}
+<!-- {foreach item = item key = key from = $nav_middle_list} -->
+        {if $item.nav_name eq about && $item.is_index eq 0}
+                {include file="inc/section_about.tpl"}
+        {/if}
+        {if $item.nav_name eq products && $item.is_index eq 0}
+                {include file="inc/products.tpl"}
+        {/if}
+        {if $item.nav_name eq follow_me && $item.is_index eq 0}
+                {include file="inc/follow_me.tpl"}
+        {/if}
+        {if $item.nav_name eq contact && $item.is_index eq 0}
+                {include file="inc/contact.tpl"}
+        {/if}
+<!-- {/foreach} -->
+
+
 {include file="inc/footer.tpl"}
+
+
 </body>
 </html>

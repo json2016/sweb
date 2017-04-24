@@ -35,3 +35,4 @@
 <script src="images/js/jquery.fitvids.js"></script>
 <script src="images/js/jquery.ajaxchimp.min.js"></script>
 <script src="images/js/custom.js"></script>
+<script src="images/js/login-register.js"></script>

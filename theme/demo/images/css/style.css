@@ -322,7 +322,7 @@ header {
    Navigation       
 -----------------------------------------*/
 /* Navigation Reset */
-.navbar-nav > li > a:hover {
+.navbar-nav > ul > li > a:hover {
 	background: inherit;
 }
 
@@ -337,6 +337,7 @@ header {
 	padding-top: 3px;
 	color: #ffffff;
 }
+
 
 /* Sticky Navigation */
 .sticky-navigation {
@@ -358,7 +359,7 @@ header {
 	-webkit-backface-visibility: hidden;
 	outline: inherit;
 	position: relative;
-    border: 2px solid transparent;
+        /*border: 2px solid transparent;*/
 }
 
 .sticky-navigation .navbar-nav > li > a {
@@ -367,7 +368,7 @@ header {
 	text-transform: uppercase;
 	font-weight: 600;
 	color: #eeeeee;
-    border-left: 2px solid transparent;
+        /*border-left: 2px solid transparent;*/
 }
 
 
