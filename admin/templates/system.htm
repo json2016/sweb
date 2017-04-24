@@ -152,15 +152,61 @@
                 <tr>
                     <td rowspan="3" width="131" align="right">头部</td>
                     <td align="center" width="20%">标题</td>
-                    <td ><input name="header-title" style="width: 78%" class="inpMain" type="text" /></td>
+                    <td ><input name="header_title1" style="width: 78%" class="inpMain" value="{$cfg_list_theme.header_title1}" type="text" /></td>
+                    <td ><input name="header_title2" style="width: 78%" class="inpMain" value="{$cfg_list_theme.header_title2}"  type="text" /></td>
                 </tr>
                 <tr>
                     <td align="center">内容</td>
-                    <td><input name="header-content" width="70%" class="inpMain" style="width: 78%" type="text" /></td>
+                    <td><textarea cols="100" rows="4" name="header_content1">{$cfg_list_theme.header_content1}</textarea></td>
+                    <td><textarea cols="100" rows="4" name="header_content2">{$cfg_list_theme.header_content2}</textarea></td>
                 </tr>
                 <tr>
                     <td align="center">背景图片</td>
-                    <td><input type="file" name="{$cfg_list.name}" size="18" /></td>
+                    <td><input type="file" name="header_images" size="18" value="{$cfg_list_theme.header_images}"/>
+                    {if $cfg_list_theme.header_images}<a href="../{$cfg_list_theme.header_images}" target="_blank"><img src="images/icon_yes.png"></a>{else}<img src="images/icon_no.png">{/if}
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="3" width="131" align="right">About</td>
+                    <td align="center" width="20%">标题</td>
+                    <td ><input name="about_title1" style="width: 78%" class="inpMain" type="text" value="{$cfg_list_theme.about_title1}" /></td>
+                    <td ><input name="about_title2" style="width: 78%" class="inpMain" type="text" value="{$cfg_list_theme.about_title2}"/></td>
+                </tr>
+                <tr>
+                    <td align="center">内容</td>
+                    <td><textarea cols="100" rows="4" name="about_content1">{$cfg_list_theme.about_content1}</textarea></td>
+                    <td><textarea cols="100" rows="4" name="about_content2">{$cfg_list_theme.about_content2}</textarea></td>
+                </tr>
+                <tr>
+                    <td align="center">图片</td>
+                    <td><input type="file" name="about_images" size="18" value="{$cfg_list_theme.about_images}"/>
+                    {if $cfg_list_theme.about_images}<a href="../{$cfg_list_theme.about_images}" target="_blank"><img src="images/icon_yes.png"></a>{else}<img src="images/icon_no.png">{/if}
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4" width="131" align="right">Features</td>
+                    <td align="center" width="20%">标题</td>
+                    <td ><input name="features_title1" style="width: 78%" class="inpMain" type="text" value="{$cfg_list_theme.features_title1}"/></td>
+                    <td ><input name="features_title2" style="width: 78%" class="inpMain" type="text" value="{$cfg_list_theme.features_title2}"/></td>
+                </tr>
+                <tr>
+                    <td align="center">内容1</td>
+                    <td><textarea cols="100" rows="4" name="features_content1">{$cfg_list_theme.features_content1}</textarea></td>
+                    <td><textarea cols="100" rows="4" name="features_content2">{$cfg_list_theme.features_content2}</textarea></td>
+                </tr>
+                <tr>
+                    <td align="center">内容2</td>
+                    <td><textarea cols="100" rows="4" name="features_content3">{$cfg_list_theme.features_content3}</textarea></td>
+                    <td><textarea cols="100" rows="4" name="features_content4">{$cfg_list_theme.features_content4}</textarea></td>
+                </tr>
+                <tr>
+                    <td align="center">内容3</td>
+                    <td><textarea cols="100" rows="4" name="features_content5">{$cfg_list_theme.features_content5}</textarea></td>
+                    <td><textarea cols="100" rows="4" name="features_content6">{$cfg_list_theme.features_content6}</textarea></td>
+                </tr>
+                <tr>
+                    <td width="131" align="right">video</td>
+                    <td align="left" width="20%" colspan="3"><input type="text" style="width: 78%" value="{$cfg_list_theme.video}" name="video"/></td>
                 </tr>
             </table>     
             <!--{/if}-->

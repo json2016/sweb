@@ -65,7 +65,6 @@ elseif ($rec == 'add') {
     
     $smarty->display('nav.htm');
 } 
-
 elseif ($rec == 'insert') {
     $nav_menu = explode(',', $_POST['nav_menu']);
     $module = $nav_menu[0];
@@ -77,7 +76,7 @@ elseif ($rec == 'insert') {
     // CSRF防御令牌验证
     $firewall->check_token($_POST['token']);
     
-    $sql = "INSERT INTO " . $dou->table('nav') . " (id, module, nav_name, guide, parent_id, type, sort)" . " VALUES (NULL, '$module', '$_POST[nav_name]', '$guide', '$_POST[parent_id]', '$_POST[type]', '$_POST[sort]')";
+    $sql = "INSERT INTO " . $dou->table('nav') . " (id, module, nav_name, guide, parent_id, type, sort,is_states,is_index)" . " VALUES (NULL, '$module', '$_POST[nav_name]', '$guide', '$_POST[parent_id]', '$_POST[type]', '$_POST[sort]','$_POST[is_states]','$_POST[is_index]')";
     $dou->query($sql);
     
     $dou->create_admin_log($_LANG['nav_add'] . ': ' . $_POST['nav_name']);
@@ -132,7 +131,7 @@ elseif ($rec == 'update') {
         $update = ", guide='$_POST[guide]'";
     }
     
-    $sql = "UPDATE " . $dou->table('nav') . " SET nav_name = '$_POST[nav_name]'" . $update . ", parent_id = '$_POST[parent_id]', type = '$_POST[type]', sort = '$_POST[sort]', is_states = '$_POST[is_states]' WHERE id = '$_POST[id]'";
+    $sql = "UPDATE " . $dou->table('nav') . " SET nav_name = '$_POST[nav_name]'" . $update . ", parent_id = '$_POST[parent_id]', type = '$_POST[type]', sort = '$_POST[sort]', is_states = '$_POST[is_states]', is_index = '$_POST[is_index]'  WHERE id = '$_POST[id]'";
     $dou->query($sql);
     
     $dou->create_admin_log($_LANG['nav_edit'] . ': ' . $_POST['nav_name']);

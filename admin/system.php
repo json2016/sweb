@@ -36,6 +36,8 @@ if ($rec == 'default') {
     $smarty->assign('cfg_list_main', get_cfg_list());
     $smarty->assign('cfg_list_display', get_cfg_list('display'));
     $smarty->assign('cfg_list_defined', get_cfg_list('defined'));
+    $smarty->assign('cfg_list_theme', get_cfg_list('theme'));//print_r(get_cfg_list('theme'));exit;
+    
     if (file_exists(ROOT_PATH . "include/mail.class.php")) // 判断是否存在邮件模块
         $smarty->assign('cfg_list_mail', get_cfg_list('mail'));
     
@@ -63,12 +65,31 @@ if ($rec == 'update') {
         $_POST['site_logo'] = $upfile;
     }
     
+    // 上传图片生成
+    if ($_FILES['header_images']['name'] != "") {
+        $logo_dir = ROOT_PATH . "theme/" . $_CFG['site_theme'] . "/images/"; // header_images上传路径,结尾加斜杠
+        $logo = new Upload($logo_dir, ''); // 实例化类文件
+        $upfile = $logo->upload_image('header_images', 'header_images'); // 上传的文件域
+        $_POST['header_images'] = $upfile;
+    }
+    
+    // 上传图片生成
+    if ($_FILES['about_images']['name'] != "") {
+        $logo_dir = ROOT_PATH . "theme/" . $_CFG['site_theme'] . "/images/"; // about_images上传路径,结尾加斜杠
+        $logo = new Upload($logo_dir, ''); // 实例化类文件
+        $upfile = $logo->upload_image('about_images', 'about_images'); // 上传的文件域
+        $_POST['about_images'] = $upfile;
+    }
+    
     // CSRF防御令牌验证
     $firewall->check_token($_POST['token']);
+    //print_r($_POST);exit;
+    
     
     foreach ($_POST as $name => $value) {
         if (is_array($value)) $value = serialize($value);
         $sql = "UPDATE " . $dou->table('config') . " SET value = '$value' WHERE name = '$name'";
+        //echo $sql;exit;
         $dou->query($sql);
     }
     
@@ -89,7 +110,7 @@ function get_cfg_list($tab = 'main') {
         if ($row['box'])
             $box = explode(",", $row['box']);
         
-        if ($row['name'] == 'site_logo')
+        if ($row['name'] == 'site_logo' || $row['name'] == 'header_images' || $row['name'] == 'about_images')
             $row['value'] = $row['value'] ? "theme/" . $GLOBALS['_CFG']['site_theme'] . "/images/" . $row['value'] : '';
         
         if ($row['name'] == 'language')
@@ -133,15 +154,18 @@ function get_cfg_list($tab = 'main') {
                 );
             }
         }
-        
-        $cfg_list[] = array (
+        if($tab !='theme'){
+            $cfg_list[] = array (
                 "value" => $value_array ? $value_array : $row['value'],
                 "name" => $row['name'],
                 "type" => $row['type'],
                 "box" => $box,
                 "lang" => $GLOBALS['_LANG'][$row['name']],
                 "cue" => $cue 
-        );
+            );
+        }else{
+            $cfg_list[$row['name']] =  $row['value']; 
+        }
     }
     
     return $cfg_list;

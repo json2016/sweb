@@ -29,6 +29,7 @@
        <th align="left">{$lang.nav_link}</th>
        <th width="80" align="center">{$lang.sort}</th>
        <th width="120" align="center">{$lang.if_show}</th>
+       <th width="120" align="center">{$lang.sort_btn}</th>
        <th width="120" align="center">{$lang.handler}</th>
       </tr>
       <!-- {foreach from=$nav_list item=nav_list} -->
@@ -40,6 +41,11 @@
        <td align="center">有效</td>
        <!-- {else} -->
        <td align="center"><span style="color:red;">无效</span></td>
+       <!-- {/if} -->
+       <!-- {if $nav_list.is_index eq 0 } 导航列表 -->
+       <td align="center">显示</td>
+       <!-- {else} -->
+       <td align="center"><span style="color:red;">内页显示</span></td>
        <!-- {/if} -->
        <td align="center"><a href="nav.php?rec=edit&id={$nav_list.id}">{$lang.edit}</a> | <a href="nav.php?rec=del&id={$nav_list.id}">{$lang.del}</a></td>
       </tr>
@@ -111,6 +117,36 @@
             </td>
            </tr>
            <tr>
+            <td height="35" align="right">{$lang.if_show}</td>
+            <td>
+                <select name="is_states">
+                        <!-- {if $nav_info.is_states eq 0} -->
+                        <option value="{$nav_info.is_states}" selected>有效</option>   
+                        <option value="1">无效</option>
+                        <!--{else}-->
+                        <option value="1" selected>无效</option>
+                        <option value="0">有效</option>
+                         <!-- {/if} -->
+                     </select>
+            </td>
+           </tr>
+
+            <tr>
+            <td height="35" align="right">{$lang.sort_btn}</td>
+            <td>
+                <select name="is_index">
+                        <!-- {if $nav_info.is_states eq 0} -->
+                        <option value="{$nav_info.is_index}" selected>显示</option>   
+                        <option value="1">内页显示</option>
+                        <!--{else}-->
+                        <option value="1" selected>内页显示</option>
+                        <option value="0">显示</option>
+                         <!-- {/if} -->
+                </select>
+            </td>
+           </tr>
+           
+           <tr>
             <td></td>
             <td>
              <input type="hidden" name="token" value="{$token}" />
@@ -166,6 +202,37 @@
              <input type="text" name="sort" value="50" size="5" class="inpMain" />
             </td>
            </tr>
+           
+           <tr>
+            <td height="35" align="right">{$lang.if_show}</td>
+            <td>
+                <select name="is_states">
+                        <!-- {if $nav_info.is_states eq 0} -->
+                        <option value="{$nav_info.is_states}" selected>有效</option>   
+                        <option value="1">无效</option>
+                        <!--{else}-->
+                        <option value="1" selected>无效</option>
+                        <option value="0">有效</option>
+                         <!-- {/if} -->
+                     </select>
+            </td>
+           </tr>
+
+            <tr>
+            <td height="35" align="right">{$lang.sort_btn}</td>
+            <td>
+                <select name="is_index">
+                        <!-- {if $nav_info.is_states eq 0} -->
+                        <option value="{$nav_info.is_index}" selected>显示</option>   
+                        <option value="1">内页显示</option>
+                        <!--{else}-->
+                        <option value="1" selected>内页显示</option>
+                        <option value="0">显示</option>
+                         <!-- {/if} -->
+                </select>
+            </td>
+           </tr>
+           
            <tr>
             <td></td>
             <td>
@@ -252,6 +319,22 @@
                 </select>
        </td>
       </tr>
+      
+       <tr>
+       <td height="35" align="right">{$lang.sort_btn}</td>
+       <td>
+           <select name="is_index">
+                   <!-- {if $nav_info.is_index eq 0} -->
+                   <option value="{$nav_info.is_index}" selected>显示</option>   
+                   <option value="1">内页显示</option>
+                   <!--{else}-->
+                   <option value="1" selected>内页显示</option>
+                   <option value="0">显示</option>
+                    <!-- {/if} -->
+           </select>
+       </td>
+      </tr>
+      
       <tr>
        <td height="35" align="right">{$lang.sort}</td>
        <td>
