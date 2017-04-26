@@ -305,79 +305,6 @@ td, th {
     background:rgba(0, 0, 0, .2);
   }
 }
-@font-face {font-family: "iconfont";
-  src: url(b278f4350fcc617fe92d2a385c754be1.eot); /* IE9*/
-  src: url(.eot#iefix) format('embedded-opentype'), 
-  url(513822e7cf46ff8029a44d17e33e24bb.woff) format('woff'), 
-  url(969b33c70ea8b990173754c02ef827ba.ttf) format('truetype'), 
-  url(d9b1af54f59fd73e7fc2dd5d181348f7.svg#iconfont) format('svg'); 
-}
-
-.fa-angle-left:before { content: "\E608"; }
-.fa-angle-right:before { content: "\E613"; }
-.fa-calendar:before { content: "\E677"; }
-.fa-calendar-o:before { content: "\E677"; }
-.iconfont, .fa {
-  font-family:"iconfont" !important;
-  font-size:16px;
-  font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
-.icon-iconloading:before { content: "\E63A"; }
-.icon-mail:before { content: "\E60E"; }
-.icon-close:before { content: "\E642"; }
-.icon-star:before { content: "\E630"; }
-.icon-squarecheck:before { content: "\E633"; }
-.icon-starfull:before { content: "\E631"; }
-.icon-delete:before { content: "\E63D"; }
-.icon-refresh:before { content: "\E63C"; }
-.icon-square:before { content: "\E634"; }
-.icon-flash:before { content: "\E60A"; }
-.icon-ins:before { content: "\E61D"; }
-.icon-writetogethersuccess:before { content: "\E63B"; }
-.icon-Anker_Cart:before { content: "\E65B"; }
-.icon-form:before { content: "\E65E"; }
-.icon-less:before { content: "\E601"; }
-.icon-search:before { content: "\E664"; }
-.icon-Anker_Account:before { content: "\E66A"; }
-.icon-facebook:before { content: "\E657"; }
-.icon-yuanjiaojuxing2:before { content: "\E610"; }
-.icon-blog:before { content: "\E60D"; }
-.icon-twitter:before { content: "\E615"; }
-.icon-edit:before { content: "\E63F"; }
-.icon-1434636247meanicons54:before { content: "\E62E"; }
-.icon-gifts:before { content: "\E674"; }
-.icon-logout:before { content: "\E672"; }
-.icon-tabordersinactive:before { content: "\E64A"; }
-.icon-similarproduct:before { content: "\E66F"; }
-.icon-imagetext:before { content: "\E675"; }
-.icon-faq:before { content: "\E605"; }
-.icon-back:before { content: "\E608"; }
-.icon-cart:before { content: "\E609"; }
-.icon-more:before { content: "\E613"; }
-.icon-plus:before { content: "\E616"; }
-.icon-search1:before { content: "\E618"; }
-.icon-subtract:before { content: "\E619"; }
-.icon-viewlist:before { content: "\E61C"; }
-.icon-youtube:before { content: "\E60F"; }
-.icon-0264warning:before { content: "\E63E"; }
-.icon-gerenzhongxin:before { content: "\E670"; }
-.icon-icondownload:before { content: "\E671"; }
-.icon-map:before { content: "\E676"; }
-.icon-g:before { content: "\E606"; }
-.icon-power:before { content: "\E600"; }
-.icon-security:before { content: "\E604"; }
-.icon-manageorder:before { content: "\E673"; }
-.icon-select:before { content: "\E651"; }
-.icon-battery0:before { content: "\E67B"; }
-.icon-sanjiaoxing:before { content: "\E60B"; }
-.icon-zhifu:before { content: "\E603"; }
-.icon-shiliangzhinengduixiang101:before { content: "\E607"; }
-.icon-buynow:before { content: "\E602"; }
-.icon-periscope3:before { content: "\E60C"; }
-.icon-hot:before { content: "\E611"; }
 
 html {
   font-family :Helvetica,Arial,sans-serif;
@@ -3819,9 +3746,10 @@ _:-ms-lang(x), .loading-cell b { -ms-transform:translateY(.2rem); transform:tran
 .Authorize {
   position:relative;
   background-image:url(q1.jpg);
-  background-repeat:no-repeat;
   background-position:0 50%;
+  height: 700px;
 }
+
 .Authorize .wrap{ max-width:1200px; margin:0 auto;
 }
 .Authorize .confirmBtn{ color: white; background: #00a7e1; margin-top:.5rem;

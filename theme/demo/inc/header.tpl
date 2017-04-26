@@ -85,7 +85,7 @@
 	
 </div>
 
-<div class="modal fade login" id="loginModal" style="display: none;">
+{*<div class="modal fade login" id="loginModal" style="display: none;">
 		      <div class="modal-dialog login animated">
     		      <div class="modal-content">
     		         <div class="modal-header">
@@ -147,7 +147,7 @@
                     </div>        
     		      </div>
 		      </div>
-</div>                                        
+</div>    *}                                    
                                         
 </header>
 

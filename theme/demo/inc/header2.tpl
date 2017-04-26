@@ -1,4 +1,4 @@
-            <div class="Header clearfix Header-fixed" >
+            <div class="Header clearfix " >
                 <div >
                     <div class="registerTips" ></div>
                     <div class="navigator" >
@@ -9,18 +9,12 @@
 <!-- {if $nav.nav_name eq 'HOME'} --><li class="cur" ><!-- {else} --><li class="" ><!-- {/if} --><a href="{$nav.url}"{if $nav.target} target="_blank"{/if}>{$nav.nav_name}</a><i class="iconfont" ></i></li>
 <!-- {/foreach} -->
                                 <span ></span></ul>
-                               <!-- <li class="search " ><a href="javascript:void(0)" >SEARCH</a><i class="iconfont" ></i></li>-->
                             <div class="mask" ></div>
                             <div class="tools" >
-                                <div class="tool search searchInput" >
-                                    <form action="/product_category.php" method="get" name="forms">
-                                        <input type="search" name="s"><a href='javascript:document.forms.submit();' class="q_forms">
-                                        <i class="iconfont"></i></a>
-                                    </form>
-                                </div><a title="Profile" class="tool member" href="/user" ><i class="iconfont" ></i></a>
-                                <a href="/user" title="Search" class="tool search searchBtn" ><i class="iconfont" ></i></a>
-                                <a class="tool cart" href="/order/cart" ><i class="iconfont" ></i>
-                                <i class="cartCount" id="cartCount">0</i></a></div>
+                                <a title="Profile" href="/user" ><i class="fa fa-user fa-fw"></i></a>
+                                <a class="tool cart" href="/order/cart" ><i class="fa fa-shopping-cart" ></i>
+                                <i class="fa fa-shopping-cart" id="cartCount">0</i></a>
+                            </div>
                         </div>
                     </div>
                 </div>

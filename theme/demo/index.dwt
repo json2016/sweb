@@ -15,13 +15,13 @@
 <link rel="stylesheet" href="images/assets/font-awesome/css/font-awesome.min.css">
 <!--[if lte IE 7]><script src="images/assets/elegant-icons/lte-ie7.js"></script><![endif]-->
 <!-- Corousel and Lightbox -->
-<link rel="stylesheet" href="images/css/owl.theme.css">
+ <link rel="stylesheet" href="images/css/owl.theme.css">
 <link rel="stylesheet" href="images/css/owl.carousel.css">
 <link rel="stylesheet" href="images/css/nivo-lightbox.css">
 <link rel="stylesheet" href="images/css/themes/default/default.css">
 <!-- Colors -->
 <!-- Default Color -->
-<link rel="stylesheet" href="images/css/colors/blue.css"> 
+<link rel="stylesheet" href="images/css/colors/blue.css">
 <!-- Colors Options --> 
 <!--<link rel="stylesheet" href="images/css/colors/alizarin.css">-->
 <!--<link rel="stylesheet" href="images/css/colors/blue.css">-->
@@ -31,11 +31,11 @@
 <!--<link rel="stylesheet" href="images/css/colors/purple.css">-->
 <!--<link rel="stylesheet" href="images/css/colors/yellow.css">-->
 <!-- Preloader -->
-<link rel="stylesheet" href="images/css/preloader.css">
+<!--<link rel="stylesheet" href="images/css/preloader.css">-->
 <!-- style.css -->
 <link rel="stylesheet" href="images/css/style.css">
 <!-- Responsive CSS -->
-<link rel="stylesheet" href="images/css/responsive.css">
+<!-- <link rel="stylesheet" href="images/css/responsive.css">-->
 <!--[if lt IE 9]>
 	<script src="images/js/html5shiv.js"></script>
 	<script src="images/js/respond.min.js"></script>
