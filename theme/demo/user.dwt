@@ -314,7 +314,7 @@
    
 
 </div> 
- {include file="inc/footer.tpl"}
+ {include file="inc/footer2.tpl"}
         </div>
     </div>
 <script src="images/jquery.form.js"></script>

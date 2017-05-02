@@ -244,3 +244,21 @@
     height: 5rem;
     line-height: 5rem;
 }
+
+.social-icons li{
+    float: left;
+    padding: 5px;
+    width: 80px;
+}
+
+.social-icons .fa{
+    width: 32px;
+    font-size: 30px;
+    display: inline-block;
+    color: #19B4EA;
+}
+.backTop .fa{
+    width: 32px;
+    font-size: 30px;
+    display: inline-block;
+}
